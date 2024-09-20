@@ -1,0 +1,127 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cecdcd; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+}
+
+h1 strong{
+    color: red;
+}
+
+
+
+#pokemonInput {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(202, 0, 0);
+}
+
+#pokemonContainer{
+    margin-top: 30px;
+    padding: 70px;
+    align-items: center;
+    background-color: #b8b6b6;
+    border-radius: 20%;
+    max-width: 1000px;
+
+}
+
+#pokemonContainer button{
+    margin: 50px;
+}
+
+#pokeBackground {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#pokeImg img{
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    animation: float 1s ease-in-out infinite;
+}
+
+
+#pokeInfo{
+    margin-left: 30px;
+    width: 450px;
+    height: 450px;
+
+}
+
+#pokemonDetalhes {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+#pokemonDetalhes h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #333;
+}
+
+#pokemonDetalhes p {
+    margin: 5px 0;
+    font-size: 25px;
+    color: #666;
+}
+
+
+#pokemonStatus {
+    text-align: center;
+}
+
+#pokemonStatus p {
+    margin: 5px 0;
+    font-size: 25px;
+    color: #666;
+}
